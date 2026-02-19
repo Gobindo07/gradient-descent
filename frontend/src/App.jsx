@@ -46,6 +46,25 @@ function App() {
       <p className="subtitle">
         Optimization of a 4th-degree polynomial using Gradient Descent Algorithm
       </p>
+       <div className="card">
+        <h2>Mathematical Formula</h2>
+        <p style={{ textAlign: "center",  fontSize: "22px",  fontWeight: "600", color: "#4f46e5", }}>
+           f(x) = ax⁴ + bx³ + cx² + dx + e
+        </p>
+      </div>
+      <div className="card">
+        <h2>Gradient Descent Calculation Process</h2>
+        <p style={{ lineHeight: "1.6", color: "#475569" }}>
+          1. Compute derivative: f'(x) = 4ax³ + 3bx² + 2cx + d
+          <br />
+          2. Update rule: xₙ₊₁ = xₙ − η f'(xₙ)
+          <br />
+          3. Repeat for given number of iterations
+          <br />
+          4. Final x gives approximate minimum of f(x)
+        </p>
+      </div>
+
 
       <div className="card">
         <h2>Mathematical Model</h2>
@@ -53,6 +72,7 @@ function App() {
           {buildEquation()}
         </p>
       </div>
+     
 
       <PolynomialForm
         setResult={setResult}
@@ -66,6 +86,9 @@ function App() {
         </>
       )}
     </div>
+    
+    
+
   );
 }
 
