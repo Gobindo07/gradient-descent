@@ -12,11 +12,21 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 36px;
-  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
   color: #1e293b;
 }
 
+.subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+/* CARD */
 .card {
   background: white;
   padding: 30px;
@@ -26,17 +36,18 @@ h1 {
 }
 
 .card h2 {
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
   color: #334155;
+  font-size: 20px;
 }
 
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 20px;
+/* INPUT GROUP */
+.input-group {
+  margin-bottom: 18px;
 }
 
-.form-group label {
+.input-group label {
   font-weight: 600;
   font-size: 14px;
   color: #475569;
@@ -44,29 +55,33 @@ h1 {
   display: block;
 }
 
-.form-group input {
+.input-group input {
   width: 100%;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #cbd5e1;
   transition: 0.2s;
+  font-size: 14px;
 }
 
-.form-group input:focus {
+.input-group input:focus {
   outline: none;
   border-color: #6366f1;
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
 }
 
+/* BUTTON */
 button {
   margin-top: 25px;
-  padding: 14px 24px;
+  width: 100%;
+  padding: 14px;
   background: #6366f1;
   color: white;
   border: none;
   border-radius: 12px;
   cursor: pointer;
   font-weight: 600;
+  font-size: 15px;
   transition: 0.2s;
 }
 
@@ -75,8 +90,33 @@ button:hover {
   transform: translateY(-2px);
 }
 
+button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ERROR */
 .error {
   color: #ef4444;
   margin-top: 10px;
   font-weight: 500;
+}
+
+/* RESULT STYLING (for next step) */
+.result-box {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.result-label {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.result-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #4f46e5;
+  margin-top: 5px;
 }
